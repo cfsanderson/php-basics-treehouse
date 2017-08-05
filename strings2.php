@@ -1,7 +1,7 @@
 <?php
 $name = 'Caleb Frost Sanderson';
-$string_one = "Learning to display \"Hello $name!\" to the screen.\n";
-echo $string_one;
+$string_one = "";
+// echo $string_one;
 
 $string_two = 'Learning to display "Hello ' . $name . '!" to the screen.' . "\n";
 echo $string_two;
@@ -48,6 +48,14 @@ $b = '10';
 var_dump($a == $b);
 var_dump($a === $b);
 var_dump($fullName == 'Rasmus Lerdorf');
+
+if ($string_one == 'Learning to display "Hello Caleb Frost Sanderson!" to the screen.' . "\n") {
+  echo "the values match";
+} elseif ($string_one == "") {
+  echo '$string_one is empty';
+} else {
+  echo "they DO NOT match";
+};
 
 /*
 Comparison Operators
